@@ -1,10 +1,4 @@
-fixScale = function(doc) {
-
-	var addEvent = 'addEventListener',
-	    type = 'gesturestart',
-	    qsa = 'querySelectorAll',
-	    scales = [1, 1],
-	    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+/*This is a default program u can make changes whatever you want*/
 
 	function fix() {
 		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
